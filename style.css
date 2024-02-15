@@ -10,35 +10,14 @@ body {
 	margin: 1rem;
 }
 
-/* input[type='checkbox'] {
-	width: 0;
-	height: 0;
-	margin: 0;
-	border: 0 none;
-	padding: 0;
-}
-
-input[type='checkbox']:before {
-	content: url('http://placekitten.com/200/210');
-	display: block;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-}
-
-input[type='checkbox']:checked:before {
-	content: url('http://placekitten.com/210/220');
-} */
-
 .interactive-img1 {
 	display: block;
 }
 
 .container {
-	width: 400px;
-	height: 400px;
+	width: 100%;
+	aspect-ratio: 1 / 1;
 	position: relative;
-	/* background-color: aqua; */
 }
 
 .img {
@@ -49,7 +28,7 @@ input[type='checkbox']:checked:before {
 	z-index: 0;
 }
 
-button {
+.btn {
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	width: 50%;
@@ -60,88 +39,47 @@ button {
 	z-index: 1;
 }
 
-button:active,
-button:focus {
+.btn:active,
+.btn:focus {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-button:nth-child(1) {
-	/* background-color: rgba(255, 0, 0, 0.2); */
+#btn1 {
 	top: 0;
 	left: 0;
 }
-
-/* button:nth-child(1):focus ~ .img,
-button:nth-child(1):active ~ .img {
-	content: var(--img1);
-} */
 
 #btn1:active ~ .img,
 #btn1:focus ~ .img {
 	content: var(--img1);
 }
 
-/* #btn1:active,
-#btn1:focus {
-	background-color: rgba(0, 0, 0, 0.8);
-} */
-
-button:nth-child(2) {
-	/* background-color: rgba(255, 255, 0, 0.2); */
+#btn2 {
 	top: 0;
 	right: 0;
 }
 
-button:nth-child(3) {
-	/* background-color: rgba(255, 0, 255, 0.2); */
-	bottom: 0;
-	left: 0;
-}
-
-button:nth-child(4) {
-	/* background-color: rgba(0, 255, 255, 0.2); */
-	bottom: 0;
-	right: 0;
-}
-
-/* button {
-	width: 0;
-	height: 0;
-	margin: 0;
-	border: 0 none;
-	padding: 0;
-}
-
-button:before {
-	position: absolute;
-	content: var(--img1);
-	width: 200px;
-	height: 200px;
-	display: block;
-	overflow: hidden;
-}
-
-button:nth-child(1):before {
-	bottom: 0;
-	right: 0;
-}
-
-button:nth-child(2):before {
-	top: 0;
-	left: 0;
-}
-
-button:nth-child(3):before {
-	top: 0;
-	right: 0;
-}
-
-button:nth-child(4):before {
-	bottom: 0;
-	left: 0;
-}
-
-button:active:before,
-button:focus::before {
+#btn2:active ~ .img,
+#btn2:focus ~ .img {
 	content: var(--img2);
-} */
+}
+
+#btn3 {
+	bottom: 0;
+	left: 0;
+}
+
+#btn3:active ~ .img,
+#btn3:focus ~ .img {
+	content: var(--img3);
+}
+
+#btn4 {
+	bottom: 0;
+	right: 0;
+}
+
+#btn4:active ~ .img,
+#btn4:focus ~ .img {
+	content: var(--img4);
+}
