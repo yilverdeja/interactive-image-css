@@ -15,5 +15,5 @@ button:focus ~ img {
 }
 ```
 
-## Preview
+## Preview ([Codepen](https://codepen.io/yilverdeja/full/vYPvzxM))
 ![ezgif-3-7c7f7c0ab8](https://github.com/yilverdeja/interactive-image-css/assets/29952939/a1f871d3-bc5f-4502-ba3a-b65660d89203)
