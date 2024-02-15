@@ -11,10 +11,10 @@ body {
 }
 
 .container {
+	display: block;
+	position: relative;
 	width: 100%;
 	aspect-ratio: 1 / 1;
-	position: relative;
-	display: block;
 }
 
 .img {
@@ -26,19 +26,14 @@ body {
 }
 
 .btn {
-	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	width: 50%;
 	height: 50%;
 	margin: 0;
-	border: 1 none black;
 	padding: 0;
+	border: 0 none;
+	background-color: rgba(0, 0, 0, 0);
 	z-index: 1;
-}
-
-.btn:active,
-.btn:focus {
-	background-color: rgba(0, 0, 0, 0.3);
 }
 
 #btn1 {
