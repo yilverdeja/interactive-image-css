@@ -8,13 +8,34 @@
 
 body {
 	margin: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+	content: var(--img1) var(--img2) var(--img3) var(--img4) var(--img5);
+}
+
+h1 {
+	font-weight: 800;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: large;
 }
 
 .container {
-	width: 100%;
-	aspect-ratio: 1 / 1;
-	position: relative;
 	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	aspect-ratio: 1 / 1;
+	margin-bottom: 1rem;
 }
 
 .img {
@@ -26,12 +47,12 @@ body {
 }
 
 .btn {
-	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
 	width: 50%;
 	height: 50%;
 	margin: 0;
 	border: 1 none black;
+	background-color: rgba(0, 0, 0, 0);
 	padding: 0;
 	z-index: 1;
 }

@@ -11,6 +11,16 @@ body {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Preaload Images Using CSS */
+body::after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+	content: var(--img1) var(--img2) var(--img3) var(--img4) var(--img5);
+}
+
 h1 {
 	font-weight: 800;
 }
@@ -22,9 +32,9 @@ h2 {
 
 .container {
 	display: block;
-	max-width: 500px;
 	position: relative;
 	width: 100%;
+	max-width: 500px;
 	aspect-ratio: 1 / 1;
 }
 
