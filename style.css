@@ -1,0 +1,81 @@
+:root {
+	--img1: url('https://picsum.photos/id/100/200');
+	--img2: url('https://picsum.photos/id/200/200');
+	--img3: url('https://picsum.photos/id/300/400/200');
+}
+
+body {
+	margin: 1rem;
+}
+
+input[type='checkbox'] {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+}
+
+input[type='checkbox']:before {
+	content: url('http://placekitten.com/200/210');
+	display: block;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+input[type='checkbox']:checked:before {
+	content: url('http://placekitten.com/210/220');
+}
+
+.interactive-img1 {
+	display: block;
+}
+
+.container {
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+
+button {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+}
+
+button:before {
+	position: absolute;
+	content: var(--img1);
+	width: 200px;
+	height: 200px;
+	display: block;
+	overflow: hidden;
+}
+
+button:nth-child(1):before {
+	bottom: 0;
+	right: 0;
+}
+
+button:nth-child(2):before {
+	top: 0;
+	left: 0;
+}
+
+button:nth-child(3):before {
+	top: 0;
+	right: 0;
+}
+
+button:nth-child(4):before {
+	bottom: 0;
+	left: 0;
+}
+
+button:active:before,
+button:focus::before {
+	content: var(--img2);
+}
