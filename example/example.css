@@ -1,17 +1,28 @@
 :root {
-	--img1: url('https://picsum.photos/id/100/400');
-	--img2: url('https://picsum.photos/id/200/400');
-	--img3: url('https://picsum.photos/id/300/400');
-	--img4: url('https://picsum.photos/id/400/400');
-	--img5: url('https://picsum.photos/id/500/400');
+	--img1: url('images/img1.jpg');
+	--img2: url('images/img2.jpg');
+	--img3: url('images/img3.jpg');
+	--img4: url('images/img4.jpg');
+	--img5: url('images/img5.jpg');
 }
 
 body {
 	margin: 1rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+	font-weight: 800;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: large;
 }
 
 .container {
 	display: block;
+	max-width: 500px;
 	position: relative;
 	width: 100%;
 	aspect-ratio: 1 / 1;
